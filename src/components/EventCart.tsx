@@ -1,44 +1,41 @@
 import Image from "next/image";
-import React, { useState } from "react";
 
-export const EventCart = (props: { title: string; location: string; date: string; img: string }) => {
-  const [favorite, setFavorite] = useState(false);
+export const SpecialEventCart = (props: { img: string; mount: string; day: string; location: string; title: string }) => {
   return (
-    <div className="w-[360px] h-[250px] relative rounded-[25px]">
-      <Image width={360} height={250} src={props.img} alt="cart image" className="h-full w-full object-cover rounded-[25px]" />
-      {/* Date */}
-      <div className="w-[100px] h-[40px] bg-[#FFFFFF80] absolute top-[16px] left-[25px] rounded-[25px] text-[#fff] flex items-center justify-between pr-[10px] pl-[9px]">
-        <Image
-          width={30}
-          height={30}
-          alt="calendar icon"
-          className="max-h-[30px] max-w-[30px] min-h-[30px] min-w-[30px]"
-          src="/otherIcons/calendar.svg"
-        />
-        <p className="text-[10px]">{props.date}</p>
+    <button className="flex flex-col font-[300]">
+      <div className="relative w-[435px] h-[435px]">
+        <Image width={1000} height={1000} alt="special events" src={props.img} className="w-full h-full" />
+        <div className="absolute right-[20px] top-[20px] w-[62px] h-[62px] bg-white text-[#000] rounded-[8px] flex flex-col justify-center">
+          <h3 className="text-[16px] text-center">{props.mount}</h3>
+          <h2 className="text-[24px] text-center">{props.day}</h2>
+        </div>
       </div>
-      {/* Favorite */}
-      <button
-        className="w-[40px] h-[40px] rounded-[50%] bg-[#FFFFFF80] absolute top-[16px] right-[25px] flex justify-center items-center "
-        onClick={() => {
-          setFavorite(() => !favorite);
-        }}
-      >
-        <Image
-          width={30}
-          height={30}
-          alt="favorite icon"
-          className="max-h-[30px] max-w-[30px] min-h-[30px] min-w-[30px] duration-[1s]"
-          src={favorite ? "/otherIcons/fillFavorite.svg" : "/otherIcons/favorite.svg"}
-        />
-      </button>
-      {/* Title */}
-      <div className="absolute left-[25px] bottom-[35px]">
-        <h1 className="text-[14px] font-['Poppins'] font-medium text-[#fff]">{props.title}</h1>
+      <p className="text-center w-full text-[20px] text-[#C7C9CF] pt-[24px]">{props.location}</p>
+      <h3 className="text-center w-full text-[24px]">{props.title}</h3>
+    </button>
+  );
+};
+
+export const BigEventCart = (props: { img: string; mount: string; day: string; location: string; title: string }) => {
+  return (
+    <div className="flex font-[300] text-[#fff] gap-[32px]">
+      <div className="relative w-[735px] h-[840px]">
+        <Image width={1000} height={1000} alt="special events" src={props.img} className="w-full h-full" />
+        <div className="absolute right-[40px] top-[40px] w-[80px] h-[80px] bg-white text-[#000] rounded-[8px] flex flex-col justify-center">
+          <h3 className="text-[16px] text-center font-[400]">{props.mount}</h3>
+          <h2 className="text-[24px] text-center">{props.day}</h2>
+        </div>
       </div>
-      {/* Location */}
-      <div className="absolute left-[25px] bottom-[19px]">
-        <p className="text-[10px] font-normal text-[#C7C9CF]">{props.location}</p>
+      <div className="flex flex-col justify-start gap-[24px]">
+        <h3 className="text-[40px] font-[400] underline underline-offset-[8px] decoration-[2.5px] leading-[48px]">{props.title}</h3>
+        <p className="text-[24px] text-[#C7C9CF] text-left ">{props.location}</p>
+        <p className="text-[24px] font-[400] text-left">
+          {props.mount}, {props.day}
+        </p>
+        <button className="flex flex-row items-center justify-center bg-[#12121F] rounded-[8px] h-[60px] w-[205px] gap-x-[10px]">
+          <span className="text-[#686873] text-[18px]">VIEW EVENT</span>
+          <Image width={30} height={30} alt="arrow right icon" src="/otherIcons/detail-arrowRight-line.svg" className="w-[30px] h-[30px]" />
+        </button>
       </div>
     </div>
   );

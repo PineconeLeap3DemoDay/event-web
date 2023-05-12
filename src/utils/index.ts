@@ -1,77 +1,68 @@
-export const categories = [
-     { svg: "/categorIcons/movie.svg", title: "Movie" },
-     { svg: "/categorIcons/invest.svg", title: "invest" },
-     { svg: "/categorIcons/influencer.svg", title: "influencer" },
-     { svg: "/categorIcons/movie.svg", title: "Movie" },
-     { svg: "/categorIcons/invest.svg", title: "invest" },
-     { svg: "/categorIcons/influencer.svg", title: "influencer" },
-     { svg: "/categorIcons/movie.svg", title: "Movie" },
-     { svg: "/categorIcons/invest.svg", title: "invest" },
-     { svg: "/categorIcons/influencer.svg", title: "influencer" },
-   ];
-   
-   export  const cart = [
-     {
-       title: "Become an exhibitor at MEDICA ",
-       location: "Ulaanbaatar, Mongolia",
-       date: "March, 17",
-       img: "https://images.unsplash.com/photo-1682425515300-2a3ec5b7bf41?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-     },
-     {
-       title: "Become an exhibitor at MEDICA ",
-       location: "Ulaanbaatar, Mongolia",
-       date: "March, 17",
-       img: "https://images.unsplash.com/photo-1682368105880-d7593d889ef8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2187&q=80",
-     },
-   ];
-   
-   export const MoreCarts = [
-     {
-       title: "Become an exhibitor at MEDICA ",
-       location: "Ulaanbaatar, Mongolia",
-       date: "March, 17",
-       img: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80",
-     },
-     {
-       title: "Become an exhibitor at MEDICA ",
-       location: "Ulaanbaatar, Mongolia",
-       date: "March, 17",
-       img: "https://images.unsplash.com/photo-1674574124567-79b2ee3d22fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
-     },
-     {
-       title: "Become an exhibitor at MEDICA ",
-       location: "Ulaanbaatar, Mongolia",
-       date: "March, 17",
-       img: "https://images.unsplash.com/photo-1682425515300-2a3ec5b7bf41?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-     },
-     {
-       title: "Become an exhibitor at MEDICA ",
-       location: "Ulaanbaatar, Mongolia",
-       date: "March, 17",
-       img: "https://images.unsplash.com/photo-1569930784237-ea65a2f40a83?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1312&q=80",
-     },
-     {
-       title: "Become an exhibitor at MEDICA ",
-       location: "Ulaanbaatar, Mongolia",
-       date: "March, 17",
-       img: "https://images.unsplash.com/photo-1682368105880-d7593d889ef8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2187&q=80",
-     },
-     {
-       title: "Become an exhibitor at MEDICA ",
-       location: "Ulaanbaatar, Mongolia",
-       date: "March, 17",
-       img: "https://images.unsplash.com/photo-1560523160-754a9e25c68f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2272&q=80",
-     },
-     {
-       title: "Become an exhibitor at MEDICA ",
-       location: "Ulaanbaatar, Mongolia",
-       date: "March, 17",
-       img: "https://images.unsplash.com/photo-1682425515300-2a3ec5b7bf41?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-     },
-     {
-       title: "Become an exhibitor at MEDICA ",
-       location: "Ulaanbaatar, Mongolia",
-       date: "March, 17",
-       img: "https://images.unsplash.com/photo-1569930784237-ea65a2f40a83?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1312&q=80",
-     },
-   ];
+export const specialEventCarts = [
+  {
+    title: "FUTURE ISLANDS",
+    location: "Ulaanbaatar, Mongolia",
+    mount: "5сар",
+    day: "19",
+    img: "/images/poster1.png",
+  },
+  {
+    title: "TELL ME I’M ALIVE ON TOUR",
+    location: "Ulaanbaatar, Mongolia",
+    mount: "5сар",
+    day: "19",
+    img: "/images/poster2.png",
+  },
+  {
+    title: "LIKE A RIVER",
+    location: "Ulaanbaatar, Mongolia",
+    mount: "5сар",
+    day: "19",
+    img: "/images/poster3.png",
+  },
+  {
+    title: "MR. BUNGLE: GEEK SHOW 2023",
+    location: "Ulaanbaatar, Mongolia",
+    mount: "5сар",
+    day: "19",
+    img: "/images/poster4.png",
+  },
+];
+
+export const bigEventCarts = [
+  {
+    title: "THE FUTURE IS BRIGTH TOUR",
+    location: "Ulaanbaatar, Mongolia",
+    mount: "MAY",
+    day: "19",
+    img: "/images/bigPoster1.png",
+  },
+  {
+    title: "THE UNION",
+    location: "Ulaanbaatar, Mongolia",
+    mount: "MAY",
+    day: "19",
+    img: "/images/bigPoster2.png",
+  },
+  {
+    title: "THE MARS VOLTA NORTH AMERICA",
+    location: "Ulaanbaatar, Mongolia",
+    mount: "MAY",
+    day: "19",
+    img: "/images/bigPoster3.png",
+  },
+  {
+    title: "WOLFMOTHER",
+    location: "Ulaanbaatar, Mongolia",
+    mount: "MAY",
+    day: "19",
+    img: "/images/bigPoster4.png",
+  },
+  {
+    title: "HURRAY FOR THE RIFF AND RAFF",
+    location: "Ulaanbaatar, Mongolia",
+    mount: "MAY",
+    day: "19",
+    img: "/images/bigPoster5.png",
+  },
+];
